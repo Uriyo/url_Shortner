@@ -28,6 +28,7 @@ To run this project locally, follow these steps:
     ```env
     MONGODB_URI=your-mongodb-uri
     PORT=8000
+    BASE_URL=your-base-url
     ```
 
 4. **Start the server**:
