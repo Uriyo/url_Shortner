@@ -31,6 +31,6 @@ app.get('/healthz',(req,res)=>{
 
 app.use("/:shortId",getRedirectionURL);
 
-app.listen(PORT,()=> 
+app.listen(PORT,"0.0.0.0",()=> 
   logger.info(`Server running on ${PORT}`)
 );
