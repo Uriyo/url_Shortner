@@ -36,6 +36,46 @@ To run this project locally, follow these steps:
 
 ## API Endpoints
 
+## 1. Health Check
+```bash
+curl -X GET http://localhost:3000/healthz
+```
+
+<img width="1470" height="956" alt="Screenshot 2025-11-22 at 6 44 26 PM" src="https://github.com/user-attachments/assets/341ce365-84bf-44c5-8d1f-dd2bc7a7da60" />
+
+## 2. Create Short URL (Auto-generated short ID)
+```bash
+curl -X POST http://localhost:3000/api/links \
+  -H "Content-Type: application/json" \
+  -d '{
+    "url": "https://www.example.com"
+  }'
+```
+<img width="1470" height="956" alt="Screenshot 2025-11-22 at 6 53 37 PM" src="https://github.com/user-attachments/assets/ee066b1b-2f7c-4a40-acf8-4da2ee667244" />
+
+
+## 3. Create Short URL (With Custom Code)
+```bash
+curl -X POST http://localhost:3000/api/links \
+  -H "Content-Type: application/json" \
+  -d '{
+    "url": "https://www.example.com",
+    "customCode": "mycode1"
+  }'
+```
+<img width="1470" height="956" alt="Screenshot 2025-11-22 at 6 52 37 PM" src="https://github.com/user-attachments/assets/c2b0da5b-aa6d-4327-8625-3aea2a4367f9" />
+
+## 4. Get All URLs (Default pagination)
+```bash
+curl -X GET http://localhost:3000/api/links
+```
+<img width="1470" height="956" alt="Screenshot 2025-11-22 at 6 54 29 PM" src="https://github.com/user-attachments/assets/1a8b8b16-99ab-458d-8808-abdd624cced2" />
+
+## 5. Get Analytics for a Short URL
+```bash
+curl -X GET http://localhost:3000/api/links/{shortId}
+```
+<img width="1470" height="956" alt="Screenshot 2025-11-22 at 6 55 26 PM" src="https://github.com/user-attachments/assets/7a68d4ce-327a-4ec1-9524-6afb8f7a6da6" />
 
 
 ## Learning Experience
