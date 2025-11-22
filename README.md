@@ -1,4 +1,6 @@
 # URL Shortener Backend
+Frontend Repo Link- https://github.com/Uriyo/url_shortnerFrontend.git
+
 
 This is the backend repository for the URL Shortener Web App. This service handles the URL shortening, captures the IP address and location of users accessing the shortened links, and integrates tracking functionalities for Meta (Facebook) and Google Analytics.
 
