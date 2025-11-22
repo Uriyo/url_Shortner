@@ -2,6 +2,9 @@
 
 This is the backend repository for the URL Shortener Web App. This service handles the URL shortening, captures the IP address and location of users accessing the shortened links, and integrates tracking functionalities for Meta (Facebook) and Google Analytics.
 
+<img width="1470" height="799" alt="Screenshot 2025-11-22 at 9 58 15 PM" src="https://github.com/user-attachments/assets/7da70f21-83c5-4dfd-863a-89673aac6dc3" />
+
+
 ## Features
 
 1. **URL Shortening**: Shortens long URLs and generates a unique ID for each shortened URL.
